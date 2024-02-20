@@ -91,6 +91,7 @@
     <script async="" src="../pagead2.googlesyndication.com/pagead/js/f1ca8.txt?client=ca-pub-1216412245248140" crossorigin="anonymous"></script>
     <script src="assets/javascript/language.js"></script>
     <script type="text/javascript" src="../translate.google.com/translate_a/element7876.js?cb=googleTranslateElementInit2"></script>
+    {literal}
     <script>
         function multiply() {
             amount = Number( document.calculator.amount.value );
@@ -107,6 +108,7 @@
 
         }
     </script>
+    {/literal}
     <!---**************REQUIRED*****************-->
 
 </head>
