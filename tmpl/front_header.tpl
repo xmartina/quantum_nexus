@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>{$pageName}</title>
     <meta property="og:title" content="BrainBox options investment">
     <meta name="author" content="BrainBox options investment">
     <meta name="description" content="BrainBox options investment Investment Platform">
