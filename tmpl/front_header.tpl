@@ -19,6 +19,16 @@
     <!-- favicon & bookmark -->
     <link rel="apple-touch-icon" sizes="144x144" href="/template/front/a/uploads/1674120593_165be6ac3df0c9f9dfca.png">
     <link rel="shortcut icon" href="/template/front/a/uploads/1674120593_165be6ac3df0c9f9dfca.png">
+
+    <meta name="robots" content="index, follow">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#050948">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#050948">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#050948">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#050948">
+
 </head>
 <body class="v_dark" data-spy="scroll" data-offset="110">
 
