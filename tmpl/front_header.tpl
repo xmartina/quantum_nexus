@@ -18,8 +18,8 @@
     <meta property="og:image" content="uploads/1674120593_165be6ac3df0c9f9dfca.png">
     <link rel="canonical" href="/">
     <!-- favicon & bookmark -->
-    <link rel="apple-touch-icon" sizes="144x144" href="uploads/1674120593_165be6ac3df0c9f9dfca.png">
-    <link rel="shortcut icon" href="uploads/1674120593_165be6ac3df0c9f9dfca.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/template/front/a/uploads/1674120593_165be6ac3df0c9f9dfca.png">
+    <link rel="shortcut icon" href="/template/front/a/uploads/1674120593_165be6ac3df0c9f9dfca.png">
 
     <meta name="robots" content="index, follow">
     <!-- Chrome, Firefox OS and Opera -->
@@ -38,29 +38,29 @@
     </style>
 
     <!-- Animation CSS -->
-    <link rel="stylesheet" href="templates/particles-dark/css/animate.css">
+    <link rel="stylesheet" href="/template/front/a/templates/particles-dark/css/animate.css">
     <!-- Latest Bootstrap min CSS -->
-    <link rel="stylesheet" href="templates/particles-dark/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/template/front/a/templates/particles-dark/bootstrap/css/bootstrap.min.css">
     <!-- Google Font -->
     <link href="../css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="templates/particles-dark/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/template/front/a/templates/particles-dark/css/font-awesome.min.css">
     <!-- ionicons CSS -->
-    <link rel="stylesheet" href="templates/particles-dark/css/ionicons.min.css">
+    <link rel="stylesheet" href="/template/front/a/templates/particles-dark/css/ionicons.min.css">
     <!-- cryptocoins CSS -->
-    <link rel="stylesheet" href="templates/particles-dark/css/cryptocoins.css">
+    <link rel="stylesheet" href="/template/front/a/templates/particles-dark/css/cryptocoins.css">
     <!--- owl carousel CSS-->
-    <link rel="stylesheet" href="templates/particles-dark/owlcarousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="templates/particles-dark/owlcarousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/template/front/a/templates/particles-dark/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/template/front/a/templates/particles-dark/owlcarousel/css/owl.theme.default.min.css">
     <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="templates/particles-dark/css/magnific-popup.css">
-    <link rel="stylesheet" href="templates/particles-dark/css/spop.min.css">
+    <link rel="stylesheet" href="/template/front/a/templates/particles-dark/css/magnific-popup.css">
+    <link rel="stylesheet" href="/template/front/a/templates/particles-dark/css/spop.min.css">
     <!-- Style CSS -->
-    <link rel="stylesheet" href="templates/particles-dark/css/style.css">
+    <link rel="stylesheet" href="/template/front/a/templates/particles-dark/css/style.css">
 
-    <link rel="stylesheet" href="templates/particles-dark/css/responsive.css">
+    <link rel="stylesheet" href="/template/front/a/templates/particles-dark/css/responsive.css">
     <!-- Color CSS -->
-    <link id="layoutstyle" rel="stylesheet" href="templates/particles-dark/color/theme.css">
+    <link id="layoutstyle" rel="stylesheet" href="/template/front/a/templates/particles-dark/color/theme.css">
     <style>
         .pr_content li {color: #fff;}
 
@@ -77,10 +77,10 @@
         .pricing_box {background: #f0f8ff14;}
     </style>
 
-    <link rel="stylesheet" href="assets/stylesheets/others.css">
+    <link rel="stylesheet" href="/template/front/a/assets/stylesheets/others.css">
     {literal}
     <script async="" src="../pagead2.googlesyndication.com/pagead/js/f1ca8.txt?client=ca-pub-1216412245248140" crossorigin="anonymous"></script>
-    <script src="assets/javascript/language.js"></script>
+    <script src="/template/front/a/assets/javascript/language.js"></script>
     <script type="text/javascript" src="../translate.google.com/translate_a/element7876.js?cb=googleTranslateElementInit2"></script>
     <script>
         function multiply() {
