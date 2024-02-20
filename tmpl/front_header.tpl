@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,17 +30,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#050948">
     <meta name="apple-mobile-web-app-status-bar-style" content="#050948">
 
-
-    <!---**************COLORS*****************-->
     <style>
         :root {
             --primary_color: #434ccd;
             --secondary_color: #fe031c;
         }
     </style>
-    <!---**************COLORS*****************-->
-
-    <!---**************MAIN FILES*****************-->
 
     <!-- Animation CSS -->
     <link rel="stylesheet" href="templates/particles-dark/css/animate.css">
@@ -88,10 +81,10 @@
 
     <!---**************REQUIRED*****************-->
     <link rel="stylesheet" href="assets/stylesheets/others.css">
+    {literal}
     <script async="" src="../pagead2.googlesyndication.com/pagead/js/f1ca8.txt?client=ca-pub-1216412245248140" crossorigin="anonymous"></script>
     <script src="assets/javascript/language.js"></script>
     <script type="text/javascript" src="../translate.google.com/translate_a/element7876.js?cb=googleTranslateElementInit2"></script>
-    {literal}
     <script>
         function multiply() {
             amount = Number( document.calculator.amount.value );
