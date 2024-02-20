@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><{$pageName}</title>
+    <title></title>
     <meta property="og:title" content="BrainBox options investment">
     <meta name="author" content="BrainBox options investment">
     <meta name="description" content="BrainBox options investment Investment Platform">
