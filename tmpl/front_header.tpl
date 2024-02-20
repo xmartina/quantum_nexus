@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{$pageName}</title>
+    <title>{$pageName} Quantum Nexus Ai</title>
     <meta property="og:title" content="BrainBox options investment">
     <meta name="author" content="BrainBox options investment">
     <meta name="description" content="BrainBox options investment Investment Platform">
@@ -126,9 +126,9 @@
 <header class="header_wrap fixed-top">
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand page-scroll animation" href="index.html#home_section" data-animation="fadeInDown" data-animation-delay="1s">
-                <img class="logo_light" src="uploads/1674120560_41d9f62f15e1e5bbfdec.png" alt="logo" width="200px">
-                <img class="logo_dark" src="uploads/1674120560_41d9f62f15e1e5bbfdec.png" alt="logo" width="200px">
+            <a class="navbar-brand page-scroll animation" href="#home_section" data-animation="fadeInDown" data-animation-delay="1s">
+                <img class="logo_light" src="/template/front/a/uploads/1674120560_41d9f62f15e1e5bbfdec.png" alt="logo" width="200px">
+                <img class="logo_dark" src="/template/front/a/uploads/1674120560_41d9f62f15e1e5bbfdec.png" alt="logo" width="200px">
 
 
 
@@ -138,11 +138,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto">
-                    <li class="animation" data-animation="fadeInDown" data-animation-delay="1.2s"><a class="nav-link page-scroll nav_item" href="index.html#about">Who we are</a></li>
-                    <li class="animation" data-animation="fadeInDown" data-animation-delay="1.2s"><a class="nav-link page-scroll nav_item" href="index.html#getstarted">How it Works</a></li>
-                    <li class="animation" data-animation="fadeInDown" data-animation-delay="1.3s"><a class="nav-link page-scroll nav_item" href="index.html#plans">Earn & Invest</a></li>
-                    <li class="animation" data-animation="fadeInDown" data-animation-delay="1.7s"><a class="nav-link page-scroll nav_item" href="index.html#faq">FAQ</a></li>
-                    <li class="animation" data-animation="fadeInDown" data-animation-delay="1.8s"><a class="nav-link page-scroll nav_item" href="index.html#contact">Support</a></li>
+                    <li class="animation" data-animation="fadeInDown" data-animation-delay="1.2s"><a class="nav-link page-scroll nav_item" href="#about">Who we are</a></li>
+                    <li class="animation" data-animation="fadeInDown" data-animation-delay="1.2s"><a class="nav-link page-scroll nav_item" href="#getstarted">How it Works</a></li>
+                    <li class="animation" data-animation="fadeInDown" data-animation-delay="1.3s"><a class="nav-link page-scroll nav_item" href="#plans">Earn & Invest</a></li>
+                    <li class="animation" data-animation="fadeInDown" data-animation-delay="1.7s"><a class="nav-link page-scroll nav_item" href="#faq">FAQ</a></li>
+                    <li class="animation" data-animation="fadeInDown" data-animation-delay="1.8s"><a class="nav-link page-scroll nav_item" href="#contact">Support</a></li>
                 </ul>
                 <ul class="navbar-nav nav_btn align-items-center">
                     <li class="animation animated fadeInDown" data-animation="fadeInDown" data-animation-delay="1.9s" style="animation-delay: 1.9s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="auth/register.html">Sign Up</a></li>
