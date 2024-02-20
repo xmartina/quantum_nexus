@@ -145,8 +145,8 @@
                     <li class="animation" data-animation="fadeInDown" data-animation-delay="1.8s"><a class="nav-link page-scroll nav_item" href="#contact">Support</a></li>
                 </ul>
                 <ul class="navbar-nav nav_btn align-items-center">
-                    <li class="animation animated fadeInDown" data-animation="fadeInDown" data-animation-delay="1.9s" style="animation-delay: 1.9s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="auth/register.html">Sign Up</a></li>
-                    <li class="animation" data-animation="fadeInDown" data-animation-delay="2s"><a class="btn btn-default btn-radius nav_item" href="auth/login.html">Login</a></li>
+                    <li class="animation animated fadeInDown" data-animation="fadeInDown" data-animation-delay="1.9s" style="animation-delay: 1.9s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="?a=signup">Sign Up</a></li>
+                    <li class="animation" data-animation="fadeInDown" data-animation-delay="2s"><a class="btn btn-default btn-radius nav_item" href="?a=login">Login</a></li>
 
                 </ul>
             </div>
