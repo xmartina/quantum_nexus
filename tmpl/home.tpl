@@ -14,7 +14,7 @@
                         WORK FOR YOU
                     </h1>
                     <h5 style="color:#fff" data-animation="fadeInUp" data-animation-delay="0.3s">
-                        <span style="color: var(--secondary_color)">Quantum Nexus Logos</span> makes investment simpler, Comprehensive, Profitable and Resourceful for Everyone.
+                        <span style="color: var(--secondary_color)">Quantum Nexus</span> makes investment simpler, Comprehensive, Profitable and Resourceful for Everyone.
                     </h5>
                     <hr>
                     <div class="btn_group pt-2 pb-3 animation" data-animation="fadeInUp" data-animation-delay="1.0s">
@@ -136,7 +136,7 @@
                     <img src="/template/front/a/templates/particles-dark/images/service_icon4.png" alt="service_icon4">
                     <h4>Profitable Plans</h4>
                     <p>We guarantee high stable profits.
-                        Quantum Nexus Logos offer our clients proven and reliable investment plans with rates of return daily.</p>
+                        Quantum Nexus offer our clients proven and reliable investment plans with rates of return daily.</p>
                 </div>
             </div>
             <div class="col-lg-4  col-md-6 col-sm-12">
@@ -170,7 +170,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12 res_md_mt_30 res_sm_mt_20">
                 <div class="title_default_light title_border">
                     <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Who <span style="color: var(--secondary_color)">We Are</span></h4>
-                    <p class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;"><span style="color: var(--secondary_color);">Quantum Nexus Logos</span> is a leading, independent Digital Assets Investment and Blockchain platform that provides bespoke financial solutions that add value to our individual and institutional clients. We are licensed and regulated by the Securities &amp; Exchange Commission (SEC) and Financial Industry Regulatory Authority ( FINRA ) to provide Investment Banking, Asset Management and Securities Trading services to our discerning clientele. </p>
+                    <p class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;"><span style="color: var(--secondary_color);">Quantum Nexus</span> is a leading, independent Digital Assets Investment and Blockchain platform that provides bespoke financial solutions that add value to our individual and institutional clients. We are licensed and regulated by the Securities &amp; Exchange Commission (SEC) and Financial Industry Regulatory Authority ( FINRA ) to provide Investment Banking, Asset Management and Securities Trading services to our discerning clientele. </p>
 
                     <p class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">We provide an opportunity to invest from $100. Just sign up on the website and start earning steady hourly income.</p>
 
@@ -463,7 +463,7 @@
             <div class="col-lg-8 col-md-12 offset-lg-2">
                 <div class="title_default_light title_border text-center">
                     <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">How <span style="color: var(--secondary_color)">It Works</span></h4>
-                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Investing with Quantum Nexus Logos is easy and convenient. Just follow the steps below and start earning steady hourly income.</p>
+                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Investing with Quantum Nexus is easy and convenient. Just follow the steps below and start earning steady hourly income.</p>
                 </div>
             </div>
         </div>
@@ -561,10 +561,10 @@
                                     <div id="accordion1" class="faq_content">
                                         <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
                                             <div class="card-header" id="headingOne">
-                                                <h6 class="mb-0"> <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">What is Quantum Nexus Logos?</a> </h6>
+                                                <h6 class="mb-0"> <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">What is Quantum Nexus?</a> </h6>
                                             </div>
                                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion1" style="">
-                                                <div class="card-body">Quantum Nexus Logos is totally a legal Blockchain company licensed in over 105 countries with an office at: Frankenstrasse 18, 6003 Luzern, Switzerland                        </div>
+                                                <div class="card-body">Quantum Nexus is totally a legal Blockchain company licensed in over 105 countries with an office at: Frankenstrasse 18, 6003 Luzern, Switzerland                        </div>
                                             </div>
                                         </div>
 
@@ -573,23 +573,23 @@
                                                 <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What is the field of activity of the company?</a> </h6>
                                             </div>
                                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1" style="">
-                                                <div class="card-body">Quantum Nexus Logos is engaged in cryptocurrency and Forex trading. Our staff of highly qualified traders and financial experts shows high profit rates from year to year. The company's priorities are access to international markets and long-term cooperation with investors.</div>
+                                                <div class="card-body">Quantum Nexus is engaged in cryptocurrency and Forex trading. Our staff of highly qualified traders and financial experts shows high profit rates from year to year. The company's priorities are access to international markets and long-term cooperation with investors.</div>
                                             </div>
                                         </div>
                                         <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
                                             <div class="card-header" id="headingThree">
-                                                <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Who can be a client of Quantum Nexus Logos?</a> </h6>
+                                                <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Who can be a client of Quantum Nexus?</a> </h6>
                                             </div>
                                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion1" style="">
-                                                <div class="card-body">Everyone can be a client of Quantum Nexus Logos, but he\she must be not less 18 years old.</div>
+                                                <div class="card-body">Everyone can be a client of Quantum Nexus, but he\she must be not less 18 years old.</div>
                                             </div>
                                         </div>
                                         <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="1s" style="animation-delay: 1s; opacity: 1;">
                                             <div class="card-header" id="headingFour">
-                                                <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">How may I become a client of Quantum Nexus Logos?</a> </h6>
+                                                <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">How may I become a client of Quantum Nexus?</a> </h6>
                                             </div>
                                             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion1" style="">
-                                                <div class="card-body">You may become a client of Quantum Nexus Logos and it is totally free of charge. All you need is to sign up and fill all required fields. It takes less than 2 minutes to complete sign up.</div>
+                                                <div class="card-body">You may become a client of Quantum Nexus and it is totally free of charge. All you need is to sign up and fill all required fields. It takes less than 2 minutes to complete sign up.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -627,7 +627,7 @@
                                                 <h6 class="mb-0"> <a data-toggle="collapse" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine" class="">How can I open an account?</a> </h6>
                                             </div>
                                             <div id="collapseNine" class="collapse show" aria-labelledby="headingNine" data-parent="#accordion3" style="">
-                                                <div class="card-body">It's quite easy and convenient. In order to open an account you only need to have an active E-mail address, switch to Sign Up Page and fill in the require fields. It will take less than 2 minutes. But multiple accounts is not allowed under the same IP, or same email address, each user can only have one Quantum Nexus Logos account. We don't accept multiple accounts for same infos, it will be suspended if you do it.</div>
+                                                <div class="card-body">It's quite easy and convenient. In order to open an account you only need to have an active E-mail address, switch to Sign Up Page and fill in the require fields. It will take less than 2 minutes. But multiple accounts is not allowed under the same IP, or same email address, each user can only have one Quantum Nexus account. We don't accept multiple accounts for same infos, it will be suspended if you do it.</div>
                                             </div>
                                         </div>
                                         <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;">
@@ -635,7 +635,7 @@
                                                 <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">How can I access the account?</a> </h6>
                                             </div>
                                             <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion3" style="">
-                                                <div class="card-body">If you are a registered user of Quantum Nexus Logos, please enter your username or email and password in the suitable fields and click "Login" button. You will be redirected to your account automatically.</div>
+                                                <div class="card-body">If you are a registered user of Quantum Nexus, please enter your username or email and password in the suitable fields and click "Login" button. You will be redirected to your account automatically.</div>
                                             </div>
                                         </div>
                                         <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
@@ -660,10 +660,10 @@
                                     <div id="accordion4" class="faq_content">
                                         <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
                                             <div class="card-header" id="headingThirteen">
-                                                <h6 class="mb-0"> <a data-toggle="collapse" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen" class="collapsed">How reliable is Quantum Nexus Logos in terms of security and keeping personal data?</a> </h6>
+                                                <h6 class="mb-0"> <a data-toggle="collapse" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen" class="collapsed">How reliable is Quantum Nexus in terms of security and keeping personal data?</a> </h6>
                                             </div>
                                             <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordion4" style="">
-                                                <div class="card-body">We pay great attention to security and privacy. All information on our website is protected by SSL. Quantum Nexus Logos doesn’t divulge any personal data of our customers to third parties. Your participation is strictly confidential.</div>
+                                                <div class="card-body">We pay great attention to security and privacy. All information on our website is protected by SSL. Quantum Nexus doesn’t divulge any personal data of our customers to third parties. Your participation is strictly confidential.</div>
                                             </div>
                                         </div>
                                         <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;">
@@ -693,7 +693,7 @@
                                     <div id="accordion5" class="faq_content">
                                         <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
                                             <div class="card-header" id="headingSeventeen">
-                                                <h6 class="mb-0"> <a data-toggle="collapse" href="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen" class="collapsed">What do I need to start investing with Quantum Nexus Logos?</a> </h6>
+                                                <h6 class="mb-0"> <a data-toggle="collapse" href="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen" class="collapsed">What do I need to start investing with Quantum Nexus?</a> </h6>
                                             </div>
                                             <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen" data-parent="#accordion5" style="">
                                                 <div class="card-body">First of all, you need to register a new account, select an investment plan and make a deposit at least $100 through any of our available payment systems.</div>
@@ -792,7 +792,7 @@
                                                 <h6 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapse26" aria-expanded="false" aria-controls="collapse26">Where can I get my referral links and your banners?</a> </h6>
                                             </div>
                                             <div id="collapse26" class="collapse" aria-labelledby="heading26" data-parent="#accordion7" style="">
-                                                <div class="card-body">You can find your referral link in your main account dashboard. The personal referral link has the following format: https://BrainBoxoptionsinv.com?ref=johndoe, where "johndoe" is your username in Quantum Nexus Logos.</div>
+                                                <div class="card-body">You can find your referral link in your main account dashboard. The personal referral link has the following format: https://BrainBoxoptionsinv.com?ref=johndoe, where "johndoe" is your username in Quantum Nexus.</div>
                                             </div>
                                         </div>
                                         <div class="card animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
