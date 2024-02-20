@@ -1,20 +1,5 @@
 
 
-<style>
-    .pr_content li {color: #fff;}
-
-    .card {background-color: #1534b35c;}
-    .table td, .table th {color: #fff;}
-    .card-body::before {display: none;}
-    .table td {border-top: 1px solid #dee2e645;}
-    .table thead th {border-bottom: none;border-top: none;}
-    .token_rt_value h3 {color: #fff; font-size: 25px;}
-    .token_rt_value p {color: #9bb0ff;}
-    .pink_bg {background-color: #ff68ca4f;}
-    .yellow_bg {background-color: #4caf503d;}
-    .blue_light_bg {background-color: #0b1f9847;}
-    .pricing_box {background: #f0f8ff14;}
-</style>
 
 <link rel="stylesheet" href="/template/front/a/assets/stylesheets/others.css">
 {literal}
