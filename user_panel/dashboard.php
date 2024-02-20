@@ -1,5 +1,8 @@
 <?php
-include_once ('header.php');
+const                           rootDir = '/home/multistream6/domains/quantumnexusai.online/public_html/';
+const siteName = 'Quantum Nexus Ai';
+const siteUrl = 'https://quantumnexusai.online/';
+include_once (rootDir.'header.php');
 ?>
 <div class="page-content-wrapper">
     <div class="container py-2">

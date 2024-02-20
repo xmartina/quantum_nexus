@@ -2,11 +2,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>
-        brainboxoptionsinv.com
+        <?= siteName ?>
     </title>
 
-    <link rel="apple-touch-icon" sizes="144x144" href="uploads/favicon.png">
-    <link rel="shortcut icon" href="uploads/favicon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="<?= siteUrl ?>uploads/favicon.png">
+    <link rel="shortcut icon" href="<?= siteUrl ?>uploads/favicon.png">
 
     <style>
         :root {
@@ -16,11 +16,11 @@
     </style>
 
 
-    <link rel="stylesheet" href="themes/berry-classic/style.css">
-    <script src="assets/javascript/jquery.min.js"></script>
-    <script src="assets/javascript/clipboard.min.js"></script>
-    <script src="assets/javascript/language.js"></script>
-    <script src="assets/javascript/countries.js"></script>
+    <link rel="stylesheet" href="<?= siteUrl ?>themes/berry-classic/style.css">
+    <script src="<?= siteUrl ?>assets/javascript/jquery.min.js"></script>
+    <script src="<?= siteUrl ?>assets/javascript/clipboard.min.js"></script>
+    <script src="<?= siteUrl ?>assets/javascript/language.js"></script>
+    <script src="<?= siteUrl ?>assets/javascript/countries.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.qhDXWpKopYk.L.W.O/am=wA/d=0/rs=AN8SPfq5gedF4FIOWZgYyMCNZA5tU966ig/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.tr.cNNnQ_KpM00.O/am=AAQ/d=1/exm=el_conf/ed=1/rs=AN8SPfqaQqpIGzaBAYtEK2fpb1cATfJN7A/m=el_main"></script>
 
 </head>
@@ -41,13 +41,13 @@
 
             <div class="logo-wrapper">
                 <a href="">
-                    <img src="uploads/logo.png" alt="logo">
+                    <img src="<?= siteUrl ?>uploads/logo.png" alt="logo">
                 </a>
             </div>
 
             <div class="user-profile-wrapper">
                 <a class="user-profile-trigger-btn" href="?a=edit_account">
-                    <img src="uploads/user.png" alt="">
+                    <img src="<?= siteUrl ?>uploads/user.png" alt="">
                 </a>
             </div>
         </div>
@@ -67,7 +67,7 @@
                 <div class="sidenav-style1"></div>
 
                 <div class="user-profile">
-                    <img src="uploads/logo.png" alt="">
+                    <img src="<?= siteUrl ?>uploads/logo.png" alt="">
                 </div>
 
                 <div class="user-info">
@@ -174,7 +174,7 @@ Estereden@gmail.com
 
             <ul class="sidenav-nav ps-0">
                 <li>
-                    <a href="https://brainboxoptionsinv.com/?a=account"><i class="bi bi-house-door"></i> Dashboard</a>
+                    <a href="<?= siteUrl ?>?a=account"><i class="bi bi-house-door"></i> Dashboard</a>
                 </li>
                 <li>
                     <a href="?a=deposit"><i class="bi bi-wallet2"></i> Deposit</a>
@@ -247,8 +247,8 @@ Estereden@gmail.com
             <div class="copyright-info">
                 <p>
                     <span id="copyrightYear">2024</span> ©
-                    <a href="https://brainboxoptionsinv.com">
-                        brainboxoptionsinv.com
+                    <a href="<?= siteUrl ?>">
+                        <?= siteName ?>
                     </a>
                 </p>
             </div>
