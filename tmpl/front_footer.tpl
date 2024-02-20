@@ -1,37 +1,5 @@
 
 
-
-<style>
-    :root {
-        --primary_color: #434ccd;
-        --secondary_color: #fe031c;
-    }
-</style>
-
-<!-- Animation CSS -->
-<link rel="stylesheet" href="/template/front/a/templates/particles-dark/css/animate.css">
-<!-- Latest Bootstrap min CSS -->
-<link rel="stylesheet" href="/template/front/a/templates/particles-dark/bootstrap/css/bootstrap.min.css">
-<!-- Google Font -->
-<link href="../css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-<!-- Font Awesome CSS -->
-<link rel="stylesheet" href="/template/front/a/templates/particles-dark/css/font-awesome.min.css">
-<!-- ionicons CSS -->
-<link rel="stylesheet" href="/template/front/a/templates/particles-dark/css/ionicons.min.css">
-<!-- cryptocoins CSS -->
-<link rel="stylesheet" href="/template/front/a/templates/particles-dark/css/cryptocoins.css">
-<!--- owl carousel CSS-->
-<link rel="stylesheet" href="/template/front/a/templates/particles-dark/owlcarousel/css/owl.carousel.min.css">
-<link rel="stylesheet" href="/template/front/a/templates/particles-dark/owlcarousel/css/owl.theme.default.min.css">
-<!-- Magnific Popup CSS -->
-<link rel="stylesheet" href="/template/front/a/templates/particles-dark/css/magnific-popup.css">
-<link rel="stylesheet" href="/template/front/a/templates/particles-dark/css/spop.min.css">
-<!-- Style CSS -->
-<link rel="stylesheet" href="/template/front/a/templates/particles-dark/css/style.css">
-
-<link rel="stylesheet" href="/template/front/a/templates/particles-dark/css/responsive.css">
-<!-- Color CSS -->
-<link id="layoutstyle" rel="stylesheet" href="/template/front/a/templates/particles-dark/color/theme.css">
 <style>
     .pr_content li {color: #fff;}
 
