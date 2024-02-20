@@ -1,6 +1,7 @@
 <?php
 const rootDir = '/home/multistream6/domains/quantumnexusai.online/public_html/user_panel/';
 const siteName = 'Quantum Nexus Ai';
+const assetUrl = 'https://quantumnexusai.online/front/a/';
 const siteUrl = 'https://quantumnexusai.online/front/a/';
 include_once (rootDir.'header.php');
 ?>

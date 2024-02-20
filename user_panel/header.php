@@ -5,8 +5,8 @@
         <?= siteName ?>
     </title>
 
-    <link rel="apple-touch-icon" sizes="144x144" href="<?= siteUrl ?>uploads/favicon.png">
-    <link rel="shortcut icon" href="<?= siteUrl ?>uploads/favicon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="<?= assetUrl ?>uploads/favicon.png">
+    <link rel="shortcut icon" href="<?= assetUrl ?>uploads/favicon.png">
 
     <style>
         :root {
@@ -16,11 +16,11 @@
     </style>
 
 
-    <link rel="stylesheet" href="<?= siteUrl ?>themes/berry-classic/style.css">
-    <script src="<?= siteUrl ?>assets/javascript/jquery.min.js"></script>
-    <script src="<?= siteUrl ?>assets/javascript/clipboard.min.js"></script>
-    <script src="<?= siteUrl ?>assets/javascript/language.js"></script>
-    <script src="<?= siteUrl ?>assets/javascript/countries.js"></script>
+    <link rel="stylesheet" href="<?= assetUrl ?>themes/berry-classic/style.css">
+    <script src="<?= assetUrl ?>assets/javascript/jquery.min.js"></script>
+    <script src="<?= assetUrl ?>assets/javascript/clipboard.min.js"></script>
+    <script src="<?= assetUrl ?>assets/javascript/language.js"></script>
+    <script src="<?= assetUrl ?>assets/javascript/countries.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.qhDXWpKopYk.L.W.O/am=wA/d=0/rs=AN8SPfq5gedF4FIOWZgYyMCNZA5tU966ig/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.tr.cNNnQ_KpM00.O/am=AAQ/d=1/exm=el_conf/ed=1/rs=AN8SPfqaQqpIGzaBAYtEK2fpb1cATfJN7A/m=el_main"></script>
 
 </head>
@@ -41,13 +41,13 @@
 
             <div class="logo-wrapper">
                 <a href="">
-                    <img src="<?= siteUrl ?>uploads/logo.png" alt="logo">
+                    <img src="<?= assetUrl ?>uploads/logo.png" alt="logo">
                 </a>
             </div>
 
             <div class="user-profile-wrapper">
                 <a class="user-profile-trigger-btn" href="?a=edit_account">
-                    <img src="<?= siteUrl ?>uploads/user.png" alt="">
+                    <img src="<?= assetUrl ?>uploads/user.png" alt="">
                 </a>
             </div>
         </div>
@@ -67,7 +67,7 @@
                 <div class="sidenav-style1"></div>
 
                 <div class="user-profile">
-                    <img src="<?= siteUrl ?>uploads/logo.png" alt="">
+                    <img src="<?= assetUrl ?>uploads/logo.png" alt="">
                 </div>
 
                 <div class="user-info">
