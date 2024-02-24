@@ -8,7 +8,7 @@
                     </div>
                     <div class="footer_desc">
                         <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">
-                            BrainBox options investment Investment Platform            </p>
+                            Quantum Nexus Investment Platform            </p>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3 col-md-6 col-sm-6 res_md_mt_30 res_sm_mt_20">
@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <p class="copyright">&copy;
-                        2023 | BrainBox options investment          </p>
+                        2023 | Quantum Nexus</p>
                 </div>
                 <div class="col-md-6">
                     <ul class="list_none footer_menu">
@@ -92,7 +92,7 @@
             call_to_action: "We\'re online",
             button_color: "#f57600",
             position: "left",
-            pre_filled_message: "Hello, BrainBox options investment,",
+            pre_filled_message: "Hello, Quantum Nexus,",
         };
         var proto = document.location.protocol,
             host = "BrainBoxoptionsinv.com",
@@ -109,19 +109,8 @@
     } )();
 </script>
 
-<!-- Smartsupp Live Chat script -->
-<script type="text/javascript">
-    var _smartsupp = _smartsupp || {};
-    _smartsupp.key = 'ce079c60fe0ab95b2307a0f75d50d539a93592bb';
-    window.smartsupp||(function(d) {
-        var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-        s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-        c.type='text/javascript';c.charset='utf-8';c.async=true;
-        c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-    })(document);
-</script>
-<noscript> Powered by <a href="“https://www.smartsupp.com”" target="“_blank”">Smartsupp</a></noscript>
+<!--Tidio Support-->
+
 </body>
 
-<!-- Mirrored from BrainBoxoptionsinv.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 May 2023 23:33:45 GMT -->
 </html>

@@ -405,13 +405,9 @@
                                     <input type="button" class="btn btn-default btn-block" onclick="javascript:multiply();" value="Calculate">
                                 </div>
                             </div>
-                            <!--<div class="col-lg-2 col-md-4 col-6">
-                              <div class="token_rt_value token_value_white animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;">
-                                <i class="fa fa-bar-chart" style="color: #fff;font-size: 26px;"></i>
-                                <h5>$<span id="netProfit">0.00</span></h5>
-                                <p>Net Profit</p>
-                              </div>
-                            </div>-->
+
+
+
                             <div class="col-lg-2 col-md-4 col-6">
                                 <div class="token_rt_value token_value_white animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;">
                                     <h5>$<span id="profit">0.00</span></h5>
@@ -438,7 +434,7 @@
                 </div>
                 <div class="btn_group text_md_center animation" data-animation="fadeInUp" data-animation-delay="0.8s">
                     <a href="#getstarted" class="btn btn-default btn-radius page-scroll"><em class="ion-arrow-graph-up-right"></em>Get Started </a>
-                    <a href="auth/register.html" class="btn btn-default btn-radius"><em class="ion-compose"></em>Sign Up</a>
+                    <a href="?=signup" class="btn btn-default btn-radius"><em class="ion-compose"></em>Sign Up</a>
                 </div>
                 <hr>
             </div>
@@ -835,10 +831,6 @@
 </section>
 <!-- END SECTION FAQ -->
 
-<!-- START SECTION BLOG -->
-
-
-<!-- END SECTION BLOG -->
 
 <!-- START CLIENTS SECTION -->
 <section id="methods" class="client_logo small_pt small_pb">
