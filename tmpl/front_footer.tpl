@@ -84,6 +84,7 @@
 <!-- scripts js -->
 <script src="/template/front/a/templates/particles-dark/js/scripts.js"></script>
 <script type="text/javascript">
+
     ( function () {
         var options = {
             whatsapp: "",
@@ -108,6 +109,8 @@
         x.parentNode.insertBefore( s, x );
     } )();
 </script>
+
+
 
 <!--Tidio Support-->
 
