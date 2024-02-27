@@ -252,11 +252,6 @@
                         alert("Please enter your full name!");
                         document.regform.fullname.focus();
                         return false;
-                    } {
-                        /literal} {
-                        if $settings.use_user_location == 1
-                            } {
-                        literal
                     }
                     if (document.regform.address.value == '') {
                         alert("Please enter your address!");
@@ -282,12 +277,6 @@
                         alert("Please choose your country!");
                         document.regform.country.focus();
                         return false;
-                    } {
-                        /literal} { /
-                        if
-                            } {
-                        literal
-                    }
                     if (document.regform.username.value == '') {
                         alert("Please enter your username!");
                         document.regform.username.focus();
@@ -307,11 +296,6 @@
                         alert("Please check your password!");
                         document.regform.password2.focus();
                         return false;
-                    } {
-                        /literal} {
-                        if $settings.use_transaction_code
-                            } {
-                        literal
                     }
                     if (document.regform.transaction_code.value == '') {
                         alert("Please enter your transaction code!");
@@ -322,11 +306,6 @@
                         alert("Please check your transaction code!");
                         document.regform.transaction_code2.focus();
                         return false;
-                    } {
-                        /literal} { /
-                        if
-                            } {
-                        literal
                     }
                     if (document.regform.email.value == '') {
                         alert("Please enter your e-mail address!");
@@ -538,7 +517,7 @@
 
 
         </form>
-
+{/if}
 
     </div>
 </div>
