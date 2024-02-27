@@ -1,8 +1,10 @@
-
+{$pageName = 'Signup | '}
+{$siteName = 'Quantum Nexus'}
+{include file="auth_header.tpl"}
 <body style="position: relative; min-height: 100%; top: 0px;" cz-shortcut-listen="true">
 
 <div class="login-back-button">
-    {literal}
+
     <style>
         .langz {
             width: 120px;
@@ -23,7 +25,6 @@
     </style>
 
     <select onchange="doGTranslate(this);" class="langz">
-        {/literal}
         <option value="">language</option>
         <option value="en|af">Afrikaans</option>
         <option value="en|sq">Albanian</option>
