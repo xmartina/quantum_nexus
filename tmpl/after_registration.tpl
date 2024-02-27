@@ -20,6 +20,10 @@
                 <br>
 
                 <b>Important:</b> Do not provide your login and password to anyone!
+
+                <br>
+                <br>
+                <a href="?a=login">login to your account here</a>
             </div>
 
     </div>
