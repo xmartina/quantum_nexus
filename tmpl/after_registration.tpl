@@ -12,7 +12,7 @@
         </div>
 
             <div class="p-3 text-white text-center font-weight-bold">
-                <h3>Registration completed:</h3><br>
+                <h3 class="text-light">Registration completed:</h3><br>
 
                 Thank you for joining our program.<br>
                 You are now an official member of this program. You can login to your account to start investing with us and use all the services that are available for our members.
