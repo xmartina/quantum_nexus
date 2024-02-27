@@ -75,7 +75,6 @@
     </div>
     <table width="100%" border="0" cellpadding="4" cellspacing="4">
 
-
         {literal}
             <script language=javascript>
                 function checkform() {
@@ -101,10 +100,8 @@
             <h5 style="text-align: center;">Your login or password or turing image code is wrong. Please check this information.</h5>
         {/if}
 
-
-
-
     </table>
-    </form></div></div>
+    </form>
+</div>
 
 {include file="auth_footer.tpl"}
