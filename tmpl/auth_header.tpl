@@ -1,4 +1,5 @@
 <html lang="en" style="height: 100%;">
+
 <head>
     {literal}
     <style data-rc-order="prependQueue" data-css-hash="1h8tzv5" data-token-hash="1glz966">.anticon{display:inline-flex;align-items:center;color:inherit;font-style:normal;line-height:0;text-align:center;text-transform:none;vertical-align:-0.125em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.anticon >*{line-height:1;}.anticon svg{display:inline-block;}.anticon .anticon .anticon-icon{display:block;}
@@ -9,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>
-        {$pageName} |  {$company_name}
+        {$pageName} |  {$siteName}
     </title>
 
     <meta name="keywords" content="<?= $company_keyword ?>">

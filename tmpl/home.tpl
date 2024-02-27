@@ -1,4 +1,6 @@
 {$pageName = 'Home | '}
+{$siteName = 'Quantum Nexus'}
+
 {include file="front_header.tpl"}
 
 <!-- START SECTION BANNER -->
