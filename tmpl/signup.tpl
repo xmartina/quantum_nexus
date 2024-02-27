@@ -1,521 +1,337 @@
-<!DOCTYPE html>
-<html>
+{$pageName = 'Login | '}
+{include file="auth_header.tpl"}
+<body style="position: relative; min-height: 100%; top: 0px;" cz-shortcut-listen="true">
 
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<div class="login-back-button">
+    {literal}
+    <style>
+        .langz {
+            width: 120px;
+            border-radius: 20px;
+            color: #fff;
+            background-color: var(--primary_color);
+        }
+        @media only screen and (max-width: 600px) {
+            .langz {
+                width: 100px;
+                border-radius: 20px;
+                color: #fff;
+                background-color: var(--primary_color);
+            }
 
+        }
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>{$settings.site_name} LTD</title>
-    <link rel="shortcut icon" href="styles/assets/images/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
-    <link href='styles/assets/bootstrap.min.css' rel='stylesheet' type='text/css'>
-    <link href='styles/assets/animate.css' rel='stylesheet' type='text/css'>
-    <link href='styles/assets/custom_back.css' rel='stylesheet' type='text/css'>
-    <script src='styles/assets/jquery.js' type='text/javascript'></script>
-    <script src="styles/assets/wow.js"></script>
-    <script src="styles/assets/wow.min.js"></script>
-    <script type="text/javascript" src="styles/assets/bootstrap.min.js"></script>
-    <script src='styles/assets/setting.js' type='text/javascript'></script>
-    <script type="text/javascript">
-        //// Get the CryptoCurrency Information from the API
-        jQuery.ajax({
-            url: "https://min-api.cryptocompare.com/data/pricemulti",
-            data: "fsyms=BTC,ETH,DASH,LTC&tsyms=USD",
-            dataType: 'json',
-        }).done(function(data) {
-            // console.log( "BTC : " + data.BTC.USD + ", ETH : " + data.ETH.USD + ", DASH : " + data.DASH.USD, LTC : " + data.LTC.USD);
-            jQuery(".dashCoin").html('$' + data.DASH.USD);
-            jQuery(".ethCoin").html('$' + data.ETH.USD);
-            jQuery(".bitCoin").html('$' + data.BTC.USD);
-            jQuery(".liteCoin").html('$' + data.LTC.USD);
-        }).fail(function() {
-            console.log("API error");
-        });
-
-    </script>
-</head>
-
-<body>
-    <div class="wrapper">
-        <div class="headerContainer">
-            <div class="headerInner fadeInLeft wow">
-                <a href="?a=home" id="logo"></a>
-                <p>1 BTC: <span class="bitCoin"></span>
-                </p>
-                <div class="hdRight">
-                    <div class="mainNavRight">
-                        <div class="navbar">
-                            <div class="navbar-inner">
-                                <ul class="nav">
-                                    <li><a href="?a=home">Home</a></li>
-                                    <li><a href="?a=about">About</a></li>
-                                    <li><a href="?a=faq">FAQ </a></li>
-                                    <li><a href="?a=cust&amp;page=investment">PLANS</a></li>
-                                    <li><a href="?a=affiliate">AFFILIATES</a></li>
-                                    <li><a href="?a=support">SUPPORT</a></li>
-                                    <li><a href="?a=paidout">PAID</a></li>
-                                    {if $userinfo.logged != 1}
-                                    <li><a href="?a=login" class="login">login</a></li>
-                                    <li><a href="?a=signup" class="signup">signup</a></li>{else}
-
-                                    <li><a href="?a=account" class="signup">dashboard</a></li>{/if}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </style>
+    {/literal}
+    <select onchange="doGTranslate(this);" class="langz">
+        <option value="">language</option>
+        <option value="en|af">Afrikaans</option>
+        <option value="en|sq">Albanian</option>
+        <option value="en|ar">Arabic</option>
+        <option value="en|hy">Armenian</option>
+        <option value="en|az">Azerbaijani</option>
+        <option value="en|eu">Basque</option>
+        <option value="en|be">Belarusian</option>
+        <option value="en|bg">Bulgarian</option>
+        <option value="en|ca">Catalan</option>
+        <option value="en|zh-CN">Chinese (Simplified)</option>
+        <option value="en|zh-TW">Chinese (Traditional)</option>
+        <option value="en|hr">Croatian</option>
+        <option value="en|cs">Czech</option>
+        <option value="en|da">Danish</option>
+        <option value="en|nl">Dutch</option>
+        <option value="en|en">English</option>
+        <option value="en|et">Estonian</option>
+        <option value="en|tl">Filipino</option>
+        <option value="en|fi">Finnish</option>
+        <option value="en|fr">French</option>
+        <option value="en|gl">Galician</option>
+        <option value="en|ka">Georgian</option>
+        <option value="en|de">German</option>
+        <option value="en|el">Greek</option>
+        <option value="en|ht">Haitian Creole</option>
+        <option value="en|iw">Hebrew</option>
+        <option value="en|hi">Hindi</option>
+        <option value="en|hu">Hungarian</option>
+        <option value="en|is">Icelandic</option>
+        <option value="en|id">Indonesian</option>
+        <option value="en|ga">Irish</option>
+        <option value="en|it">Italian</option>
+        <option value="en|ja">Japanese</option>
+        <option value="en|ko">Korean</option>
+        <option value="en|lv">Latvian</option>
+        <option value="en|lt">Lithuanian</option>
+        <option value="en|mk">Macedonian</option>
+        <option value="en|ms">Malay</option>
+        <option value="en|mt">Maltese</option>
+        <option value="en|no">Norwegian</option>
+        <option value="en|fa">Persian</option>
+        <option value="en|pl">Polish</option>
+        <option value="en|pt">Portuguese</option>
+        <option value="en|ro">Romanian</option>
+        <option value="en|ru">Russian</option>
+        <option value="en|sr">Serbian</option>
+        <option value="en|sk">Slovak</option>
+        <option value="en|sl">Slovenian</option>
+        <option value="en|es">Spanish</option>
+        <option value="en|sw">Swahili</option>
+        <option value="en|sv">Swedish</option>
+        <option value="en|th">Thai</option>
+        <option value="en|tr">Turkish</option>
+        <option value="en|uk">Ukrainian</option>
+        <option value="en|ur">Urdu</option>
+        <option value="en|vi">Vietnamese</option>
+        <option value="en|cy">Welsh</option>
+        <option value="en|yi">Yiddish</option>
+    </select>
+    <div id="google_translate_element2"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage"><select class="goog-te-combo" aria-label="Language Translate Widget"><option value="">Select Language</option><option value="af">Afrikaans</option><option value="sq">Albanian</option><option value="am">Amharic</option><option value="ar">Arabic</option><option value="hy">Armenian</option><option value="as">Assamese</option><option value="ay">Aymara</option><option value="az">Azerbaijani</option><option value="bm">Bambara</option><option value="eu">Basque</option><option value="be">Belarusian</option><option value="bn">Bengali</option><option value="bho">Bhojpuri</option><option value="bs">Bosnian</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="ceb">Cebuano</option><option value="ny">Chichewa</option><option value="zh-CN">Chinese (Simplified)</option><option value="zh-TW">Chinese (Traditional)</option><option value="co">Corsican</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="dv">Dhivehi</option><option value="doi">Dogri</option><option value="nl">Dutch</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="ee">Ewe</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fr">French</option><option value="fy">Frisian</option><option value="gl">Galician</option><option value="ka">Georgian</option><option value="de">German</option><option value="el">Greek</option><option value="gn">Guarani</option><option value="gu">Gujarati</option><option value="ht">Haitian Creole</option><option value="ha">Hausa</option><option value="haw">Hawaiian</option><option value="iw">Hebrew</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="hu">Hungarian</option><option value="is">Icelandic</option><option value="ig">Igbo</option><option value="ilo">Ilocano</option><option value="id">Indonesian</option><option value="ga">Irish Gaelic</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="jw">Javanese</option><option value="kn">Kannada</option><option value="kk">Kazakh</option><option value="km">Khmer</option><option value="rw">Kinyarwanda</option><option value="gom">Konkani</option><option value="ko">Korean</option><option value="kri">Krio</option><option value="ku">Kurdish (Kurmanji)</option><option value="ckb">Kurdish (Sorani)</option><option value="ky">Kyrgyz</option><option value="lo">Lao</option><option value="la">Latin</option><option value="lv">Latvian</option><option value="ln">Lingala</option><option value="lt">Lithuanian</option><option value="lg">Luganda</option><option value="lb">Luxembourgish</option><option value="mk">Macedonian</option><option value="mai">Maithili</option><option value="mg">Malagasy</option><option value="ms">Malay</option><option value="ml">Malayalam</option><option value="mt">Maltese</option><option value="mi">Maori</option><option value="mr">Marathi</option><option value="mni-Mtei">Meiteilon (Manipuri)</option><option value="lus">Mizo</option><option value="mn">Mongolian</option><option value="my">Myanmar (Burmese)</option><option value="ne">Nepali</option><option value="no">Norwegian</option><option value="or">Odia (Oriya)</option><option value="om">Oromo</option><option value="ps">Pashto</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="pa">Punjabi</option><option value="qu">Quechua</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sm">Samoan</option><option value="sa">Sanskrit</option><option value="gd">Scots Gaelic</option><option value="nso">Sepedi</option><option value="sr">Serbian</option><option value="st">Sesotho</option><option value="sn">Shona</option><option value="sd">Sindhi</option><option value="si">Sinhala</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="so">Somali</option><option value="es">Spanish</option><option value="su">Sundanese</option><option value="sw">Swahili</option><option value="sv">Swedish</option><option value="tg">Tajik</option><option value="ta">Tamil</option><option value="tt">Tatar</option><option value="te">Telugu</option><option value="th">Thai</option><option value="ti">Tigrinya</option><option value="ts">Tsonga</option><option value="tr">Turkish</option><option value="tk">Turkmen</option><option value="ak">Twi</option><option value="uk">Ukrainian</option><option value="ur">Urdu</option><option value="ug">Uyghur</option><option value="uz">Uzbek</option><option value="vi">Vietnamese</option><option value="cy">Welsh</option><option value="xh">Xhosa</option><option value="yi">Yiddish</option><option value="yo">Yoruba</option><option value="zu">Zulu</option></select></div>Powered by <span style="white-space:nowrap"><a class="VIpgJd-ZVi9od-l4eHX-hSRGPd" href="https://translate.google.com" target="_blank"><img src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png" width="37px" height="14px" style="padding-right: 3px" alt="Google Translate">Translate</a></span></div></div>
+</div>
+<div class="login-wrapper d-flex align-items-center justify-content-center">
+    <div class="custom-container auth py-4 px-3">
+        <div class="text-center px-4">
+            <a href="https://brainboxoptionsinv.com"><img src="/template/front/a/uploads/1674120560_41d9f62f15e1e5bbfdec.png " class="login-intro-img" width="150px"></a>
         </div>
-        <div class="bannerContainer">
-            <div class="bannerInner insideheader fadeInRight wow">
-                <div class="ctn-banner">
-                    <h3><span>Open New Account</span></h3>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <body class="loginarea">
-        <div class="signuppage">
-            <div class="becomeInner">
-                <div class="loginwrappers">
-                    <div class="form-container signup">
-                        {if $deny_registration}
-                        <h3 style="text-align: center;"> We are closed for new registrations now.</h3>
-                        {elseif $settings.use_referal_program && $settings.force_upline && !$referer && !$settings.get_rand_ref}
-                        <h5 style="text-align: center;"> You do not have a upline. Our system require a upline for each user.</h5>
-                        {else}
-                        {literal}
 
-                        <script language=javascript>
-                            function checkform() {
-                                if (document.regform.fullname.value == '') {
-                                    alert("Please enter your full name!");
-                                    document.regform.fullname.focus();
-                                    return false;
-                                } {
-                                    /literal} {
-                                    if $settings.use_user_location == 1
-                                } {
-                                    literal
-                                }
-                                if (document.regform.address.value == '') {
-                                    alert("Please enter your address!");
-                                    document.regform.address.focus();
-                                    return false;
-                                }
-                                if (document.regform.city.value == '') {
-                                    alert("Please enter your city!");
-                                    document.regform.city.focus();
-                                    return false;
-                                }
-                                if (document.regform.state.value == '') {
-                                    alert("Please enter your state!");
-                                    document.regform.state.focus();
-                                    return false;
-                                }
-                                if (document.regform.zip.value == '') {
-                                    alert("Please enter your ZIP!");
-                                    document.regform.zip.focus();
-                                    return false;
-                                }
-                                if (document.regform.country.options[document.regform.country.selectedIndex].text == '--SELECT--') {
-                                    alert("Please choose your country!");
-                                    document.regform.country.focus();
-                                    return false;
-                                } {
-                                    /literal} { /
-                                    if
-                                } {
-                                    literal
-                                }
-                                if (document.regform.username.value == '') {
-                                    alert("Please enter your username!");
-                                    document.regform.username.focus();
-                                    return false;
-                                }
-                                if (!document.regform.username.value.match(/^[A-Za-z0-9_\-]+$/)) {
-                                    alert("For username you should use English letters and digits only!");
-                                    document.regform.username.focus();
-                                    return false;
-                                }
-                                if (document.regform.password.value == '') {
-                                    alert("Please enter your password!");
-                                    document.regform.password.focus();
-                                    return false;
-                                }
-                                if (document.regform.password.value != document.regform.password2.value) {
-                                    alert("Please check your password!");
-                                    document.regform.password2.focus();
-                                    return false;
-                                } {
-                                    /literal} {
-                                    if $settings.use_transaction_code
-                                } {
-                                    literal
-                                }
-                                if (document.regform.transaction_code.value == '') {
-                                    alert("Please enter your transaction code!");
-                                    document.regform.transaction_code.focus();
-                                    return false;
-                                }
-                                if (document.regform.transaction_code.value != document.regform.transaction_code2.value) {
-                                    alert("Please check your transaction code!");
-                                    document.regform.transaction_code2.focus();
-                                    return false;
-                                } {
-                                    /literal} { /
-                                    if
-                                } {
-                                    literal
-                                }
-                                if (document.regform.email.value == '') {
-                                    alert("Please enter your e-mail address!");
-                                    document.regform.email.focus();
-                                    return false;
-                                }
-                                if (document.regform.email.value != document.regform.email1.value) {
-                                    alert("Please retupe your e-mail!");
-                                    document.regform.email.focus();
-                                    return false;
-                                }
+        {literal}
+        <script language="javascript">
+            function checkform() {
+                if (document.regform.fullname.value == '') {
+                    alert("Please enter your full name!");
+                    document.regform.fullname.focus();
+                    return false;
+                } {
+                    /literal} {
+                    if $settings.use_user_location == 1
+                        } {
+                    literal
+                }
+                if (document.regform.address.value == '') {
+                    alert("Please enter your address!");
+                    document.regform.address.focus();
+                    return false;
+                }
+                if (document.regform.city.value == '') {
+                    alert("Please enter your city!");
+                    document.regform.city.focus();
+                    return false;
+                }
+                if (document.regform.state.value == '') {
+                    alert("Please enter your state!");
+                    document.regform.state.focus();
+                    return false;
+                }
+                if (document.regform.zip.value == '') {
+                    alert("Please enter your ZIP!");
+                    document.regform.zip.focus();
+                    return false;
+                }
+                if (document.regform.country.options[document.regform.country.selectedIndex].text == '--SELECT--') {
+                    alert("Please choose your country!");
+                    document.regform.country.focus();
+                    return false;
+                } {
+                    /literal} { /
+                    if
+                        } {
+                    literal
+                }
+                if (document.regform.username.value == '') {
+                    alert("Please enter your username!");
+                    document.regform.username.focus();
+                    return false;
+                }
+                if (!document.regform.username.value.match(/^[A-Za-z0-9_\-]+$/)) {
+                    alert("For username you should use English letters and digits only!");
+                    document.regform.username.focus();
+                    return false;
+                }
+                if (document.regform.password.value == '') {
+                    alert("Please enter your password!");
+                    document.regform.password.focus();
+                    return false;
+                }
+                if (document.regform.password.value != document.regform.password2.value) {
+                    alert("Please check your password!");
+                    document.regform.password2.focus();
+                    return false;
+                } {
+                    /literal} {
+                    if $settings.use_transaction_code
+                        } {
+                    literal
+                }
+                if (document.regform.transaction_code.value == '') {
+                    alert("Please enter your transaction code!");
+                    document.regform.transaction_code.focus();
+                    return false;
+                }
+                if (document.regform.transaction_code.value != document.regform.transaction_code2.value) {
+                    alert("Please check your transaction code!");
+                    document.regform.transaction_code2.focus();
+                    return false;
+                } {
+                    /literal} { /
+                    if
+                        } {
+                    literal
+                }
+                if (document.regform.email.value == '') {
+                    alert("Please enter your e-mail address!");
+                    document.regform.email.focus();
+                    return false;
+                }
+                if (document.regform.email.value != document.regform.email1.value) {
+                    alert("Please retupe your e-mail!");
+                    document.regform.email.focus();
+                    return false;
+                }
 
-                                for (i in document.regform.elements) {
-                                    f = document.regform.elements[i];
-                                    if (f.name && f.name.match(/^pay_account/)) {
-                                        if (f.value == '') continue;
-                                        var notice = f.getAttribute('data-validate-notice');
-                                        var invalid = 0;
-                                        if (f.getAttribute('data-validate') == 'regexp') {
-                                            var re = new RegExp(f.getAttribute('data-validate-regexp'));
-                                            if (!f.value.match(re)) {
-                                                invalid = 1;
-                                            }
-                                        } else if (f.getAttribute('data-validate') == 'email') {
-                                            var re = /^[^\@]+\@[^\@]+\.\w{2,4}$/;
-                                            if (!f.value.match(re)) {
-                                                invalid = 1;
-                                            }
-                                        }
-                                        if (invalid) {
-                                            alert('Invalid account format. Expected ' + notice);
-                                            f.focus();
-                                            return false;
-                                        }
-                                    }
-                                }
-
-                                if (document.regform.agree.checked == false) {
-                                    alert("You have to agree with the Terms and Conditions!");
-                                    return false;
-                                }
-
-                                return true;
+                for (i in document.regform.elements) {
+                    f = document.regform.elements[i];
+                    if (f.name && f.name.match(/^pay_account/)) {
+                        if (f.value == '') continue;
+                        var notice = f.getAttribute('data-validate-notice');
+                        var invalid = 0;
+                        if (f.getAttribute('data-validate') == 'regexp') {
+                            var re = new RegExp(f.getAttribute('data-validate-regexp'));
+                            if (!f.value.match(re)) {
+                                invalid = 1;
                             }
-
-                            function IsNumeric(sText) {
-                                var ValidChars = "0123456789";
-                                var IsNumber = true;
-                                var Char;
-                                if (sText == '') return false;
-                                for (i = 0; i < sText.length && IsNumber == true; i++) {
-                                    Char = sText.charAt(i);
-                                    if (ValidChars.indexOf(Char) == -1) {
-                                        IsNumber = false;
-                                    }
-                                }
-                                return IsNumber;
+                        } else if (f.getAttribute('data-validate') == 'email') {
+                            var re = /^[^\@]+\@[^\@]+\.\w{2,4}$/;
+                            if (!f.value.match(re)) {
+                                invalid = 1;
                             }
+                        }
+                        if (invalid) {
+                            alert('Invalid account format. Expected ' + notice);
+                            f.focus();
+                            return false;
+                        }
+                    }
+                }
 
-                        </script>
-                        {/literal}
+                if (document.regform.agree.checked == false) {
+                    alert("You have to agree with the Terms and Conditions!");
+                    return false;
+                }
 
-                        {if $errors}
-                        <ul style="color:red">
-                            {section name=e loop=$errors}
-                            {if $errors[e] eq 'full_name'}
-                            <li>Please enter your full name!
-                                {/if}
-                                {if $errors[e] eq 'address'}
-                            <li>Please enter your address!
-                                {/if}
-                                {if $errors[e] eq 'city'}
-                            <li>Please enter your city!
-                                {/if}
-                                {if $errors[e] eq 'state'}
-                            <li>Please enter your state!
-                                {/if}
-                                {if $errors[e] eq 'zip'}
-                            <li>Please enter your zip!
-                                {/if}
-                                {if $errors[e] eq 'country'}
-                            <li>Please choose your country!
-                                {/if}
-                                {if $errors[e] eq 'username'}
-                            <li>Please enter valid username! It should contains English letters and digits only.
-                                {/if}
-                                {if $errors[e] eq 'username_exists'}
-                            <li>Sorry, such user already exists! Please try another username.
-                                {/if}
-                                {if $errors[e] eq 'email_exists'}
-                            <li>Sorry, such email already exists! Please try another email.
-                                {/if}
-                                {if $errors[e] eq 'password'}
-                            <li>Please enter a password!
-                                {/if}
-                                {if $errors[e] eq 'password_confirm'}
-                            <li>Please check your password!
-                                {/if}
-                                {if $errors[e] eq 'password_too_small'}
-                            <li>The password you provided is too small, please enter at least {$settings.min_user_password_length} characters!
-                                {/if}
-                                {if $errors[e] eq 'transaction_code'}
-                            <li>Please enter the Transaction Code!
-                                {/if}
-                                {if $errors[e] eq 'transaction_code_confirm'}
-                            <li>Please check your Transaction Code!
-                                {/if}
-                                {if $errors[e] eq 'transaction_code_too_small'}
-                            <li>The Transaction Code you provided is too small, please enter at least {$settings.min_user_password_length} characters!
-                                {/if}
-                                {if $errors[e] eq 'transaction_code_vs_password'}
-                            <li>The Transaction Code should differ from the Password!
-                                {/if}
-                                {if $errors[e] eq 'egold'}
-                            <li>Please enter your e-gold account number!
-                                {/if}
-                                {if $errors[e] eq 'invalid_perfectmoney_account'}
-                            <li>Please enter USD PerfectMoney account number!
-                                {/if}
-                                {if $errors[e] eq 'email'}
-                            <li>Please enter your e-mail!
-                                {/if}
-                                {if $errors[e] eq 'agree'}
-                            <li>You have to agree with the Terms and Conditions!
-                                {/if}
-                                {if $errors[e] eq 'turing_image'}
-                            <li>Enter the verification code as it is shown in the corresponding box.
-                                {/if}
-                                {if $errors[e] eq 'no_upline'}
-                            <li>The system requires an upline to register. {if $settings.get_rand_ref}You have to be agreed to random one or found a referral link in the net.{/if}
-                                {/if}
-                                {if $errors[e] eq 'ip_exists_in_database'}
-                            <li>Your IP already exists in our database. Sorry, but registration impossible.
-                                {/if}
+                return true;
+            }
 
-                                {if $errors[e] eq 'invalid_account_format'}
-                                {foreach from=$account_errors item=err}
-                            <li>{$err}
-                                {/foreach}
-                                {/if}
+            function IsNumeric(sText) {
+                var ValidChars = "0123456789";
+                var IsNumber = true;
+                var Char;
+                if (sText == '') return false;
+                for (i = 0; i < sText.length && IsNumber == true; i++) {
+                    Char = sText.charAt(i);
+                    if (ValidChars.indexOf(Char) == -1) {
+                        IsNumber = false;
+                    }
+                }
+                return IsNumber;
+            }
 
-                                <br>
-                                {/section}
-                        </ul>
-                        {/if}
-                        
-
-                        <form method=post onsubmit="return checkform()" name="regform">
-                            <input type=hidden name=a value="signup">
-                            <input type=hidden name=action value="signup">
-                            <div style="width:48%; float:left">
-                                <table width="100%" border=0 cellspacing=0>
-                                    <tr>
-                                        <td width="100%">
-                                            <label>Your Full Name</label>
-                                            <input placeholder="" type=text name=fullname value="{$frm.fullname|escape:" quotes"}" class=inpts size=30>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label>Your Username</label>
-                                            <input placeholder="" type=text name=username value="{$frm.username|escape:" quotes"}" class=inpts size=30>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label>Your E-mail</label>
-                                            <input placeholder="" type=text name=email value="{$frm.email|escape:" quotes"}" class=inpts size=30>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label>Retype E-mail</label>
-                                            <input placeholder="" type=text name=email1 value="{$frm.email1|escape:" quotes"}" class=inpts size=30>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label>Secret Question</label>
-                                            <input placeholder="" type=text name=sq value="{$frm.sq|escape:" quotes"}" class=inpts size=30>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label>Secret Answer</label>
-                                            <input placeholder="" type=text name=sa value="{$frm.sa|escape:" quotes"}" class=inpts size=30>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label>Define Password</label>
-                                            <input placeholder="" type=password name=password value="{$frm.password|escape:" quotes"}" class=inpts size=30>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label>Retype Password</label>
-                                            <input placeholder="" type=password name=password2 value="{$frm.password2|escape:" quotes"}" class=inpts size=30>
-                                        </td>
-                                    </tr>
-                                   
-                                    {if $settings.use_transaction_code}
-                                    <tr>
-
-                                        <td> <label>Define Transaction Code:</label><input type=password name=transaction_code value="{$frm.transaction_code|escape:" quotes"}" class=inpts size=30></td>
-                                    </tr>
-                                    <tr>
-
-                                        <td><label>Retype Transaction Code:</label> <input type=password name=transaction_code2 value="{$frm.transaction_code2|escape:" quotes"}" class=inpts size=30></td>
-                                    </tr>
-                                    {/if}
-                                    {if $ti.check.signup}
-                                    <tr>
-
-                                        <td><label> Code: <img src="{" ?a=show_validation_image&`$ti.session.name`=`$ti.session.id`&rand=`$ti.session.rand`"|encurl}"> </label> <input type=text name=validation_number class=inpts size=30></td>
-                                    </tr>
-                                    {/if}
-                                </table>
-                            </div>
-                            {literal}
-                            <div style="width:48%; float:right">
-                                <table width="100%" border=0 cellspacing=0>
-                                    <tr>
-                                        <td>
-                                            <label>Your PerfectMoney Account</label>
-                                            <input type=text class=inpts size=30 name=pay_account[18] value="" data-validate="regexp" data-validate-regexp="^U\d{5,}$" data-validate-notice="UXXXXXXX" placeholder="U12345678">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label>Your Payeer Account</label>
-                                            <input type=text class=inpts size=30 name=pay_account[43] value="" data-validate="regexp" data-validate-regexp="^P\d{5,}$" data-validate-notice="PXXXXXXX" placeholder="P12345678">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label>Your Bitcoin Account</label>
-                                            <input type=text class=inpts size=30 name=pay_account[48] value="" data-validate="regexp" data-validate-regexp="^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$" data-validate-notice="Bitcoin Address" placeholder="1YourBitcoinAddressmwGAiHnxQWP8J2">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label>Your Litecoin Account</label>
-                                            <input type=text class=inpts size=30 name=pay_account[68] value="" data-validate="regexp" data-validate-regexp="^[LM3][a-km-zA-HJ-NP-Z1-9]{25,34}$" data-validate-notice="Litecoin Address" placeholder="LYourLitecoinsAddresstwHAionxQTL2">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label>Your Dogecoin Account</label>
-                                            <input type=text class=inpts size=30 name=pay_account[79] value="" data-validate="regexp" data-validate-regexp="^[DA9][a-km-zA-HJ-NP-Z1-9]{25,34}$" data-validate-notice="Dogecoin Address" placeholder="Drm13YuL9EbYDiXVkLcCZg2QewDLBPH6Ze">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label>Your Ethereum Account</label>
-                                            <input type=text class=inpts size=30 name=pay_account[69] value="" data-validate="regexp" data-validate-regexp="^(0x)?[0-9a-fA-F]{40}$" data-validate-notice="Ethereum Address" placeholder="0x6c78b0ac68bf953c7fdbec0fd65bd5df933r8473">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label>Your Bitcoin Cash Account</label>
-                                            <input type=text class=inpts size=30 name=pay_account[77] value="" data-validate="regexp" data-validate-regexp="^[\w\d]{25,43}$" data-validate-notice="Bitcoin Cash Address" placeholder="qqsAr4Ui98fsTmUkJv7HMQkJpU8ZKGzgAB">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label>Your Dash Account</label>
-                                            <input type=text class=inpts size=30 name=pay_account[71] value="" data-validate="regexp" data-validate-regexp="^X[0-9a-zA-Z]{33}$" data-validate-notice="Dash Address" placeholder="XpU2LbWJfuzNN7JLtJ1D5qQRS9ReQLnReX">
-                                        </td>
-                                    </tr>
-                                    {/literal}
-                                    <tr>
-                                        <td colspan=2>
-                                            <input type=checkbox name=agree value=1>I agree with <a href="?a=rules">Terms and conditions</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type=submit value="Register" class=sbmt>
-                                        </td>
-                                    </tr>
-                                </table>
-                        </form>
+        </script>
+        {/literal}
 
 
-                        {/if}
-                    </div>
-                </div>
+
+        <form method="post" onsubmit="return checkform()" name="regform"><input type="hidden" name="form_id" value="17090550324761"><input type="hidden" name="form_token" value="9074bedad4a92d6d7b7fb8714a8dd2cd">
+            <input type="hidden" name="a" value="signup">
+            <input type="hidden" name="action" value="signup">
+            <div class="form-group">
+                <table width="100%" border="0" cellspacing="0">
+                    <tbody><tr>
+                        <td width="100%">
+                            <label style="font-weight: bolder; color:white;">Your Full Name</label>
+                            <input placeholder="" type="text" name="fullname" value="" class="form-control " size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label style="font-weight: bolder; color:white;">Your Username</label>
+                            <input placeholder="" type="text" name="username" value="" class="form-control " size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label style="font-weight: bolder; color:white;">Your E-mail</label>
+                            <input placeholder="" type="text" name="email" value="" class="form-control " size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label style="font-weight: bolder; color:white;">Retype E-mail</label>
+                            <input placeholder="" type="text" name="email1" value="" class="form-control " size="30">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label style="font-weight: bolder; color:white;">Define Password</label>
+                            <input placeholder="" type="password" name="password" value="" class="form-control " size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label style="font-weight: bolder; color:white;">Retype Password</label>
+                            <input placeholder="" type="password" name="password2" value="" class="form-control " size="30">
+                        </td>
+                    </tr>
+
+                    </tbody></table>
             </div>
-            <div class="loginpageright" style="padding-top:200px">
-                <a href="https://beta.companieshouse.gov.uk/company/11731430" target="_blank">
-                    <img src="styles/assets/images/loginpageright.png" alt="" />
-                </a>
-            </div>
-        </div>
-        </div>
-    </body>
-    <div class="primebitContainer">
-        <div class="primebitInner">
-            <h1><span>3 level</span> Referral commission</h1>
-            <div class="ctn-level">
-                <div class="livel-part">
-                    <h2>4<span>%</span></h2>
-                    <p>livel1</p>
-                </div>
-                <div class="livel-img">
-                    <img src="styles/assets/images/call-ic2.png">
-                </div>
-                <div class="livel-part">
-                    <h2>0.5<span>%</span></h2>
-                    <p>livel2</p>
-                </div>
-                <div class="livel-img">
-                    <img src="styles/assets/images/call-ic2.png">
-                </div>
-                <div class="livel-part">
-                    <h2>0.5<span>%</span></h2>
-                    <p>livel3</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    <div class="solidContainer">
-        <div class="solidInner zoomIn wow">
-            <div class="solid">
-                <a href="#" class="solid1"></a>
-                <a href="#" class="solid2"></a>
-                <a href="#" class="solid3"></a>
-                <a href="#" class="solid4"></a>
-                <a href="#" class="solid5"></a>
-                <a href="#" class="solid6"></a>
-                <a href="#" class="solid7"></a>
-                <a href="#" class="solid8"></a>
-            </div>
-        </div>
-    </div>
-    <div class="footerContainer">
-        <div class="footerInner">
-            <div class="ft-row1">
-                <h3>&copy; 2019. <a href="?a=home">{$settings.site_name}</a> ALL RIGHTS RESERVED</h3>
-            </div>
-            <div class="ft-part1"> <a href="?a=about">ABOUT US</a> <a href="?a=news">NEWS</a> <a href="?a=faq">FAQ</a> <a href="?a=support">support</a> <a href="?a=rules">terms</a><a href="?a=paidout">ALL PAID </a></div>
-        </div>
-    </div>
-</body>
 
 
-</html>
+
+
+
+            <label style="font-weight: bolder; color:white;">Your Bitcoin Account</label>
+            <input type="text" class="form-control " size="30" name="pay_account[48]" value="" data-validate="regexp" data-validate-regexp="^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$" data-validate-notice="Bitcoin Address" placeholder="">
+
+
+
+
+
+
+
+
+            <input type="checkbox" name="agree" value="1">I agree with <a href="?a=rules">Terms and conditions</a>
+
+
+
+
+            <input type="submit" value="Register" class="btn btn-primary w-100">
+
+
+
+        </form>
+
+
+    </div>
+</div>
+
+
+
+
+<div style="font-weight: bolder;" class="w3-margin-top w3-small w3-padding-bottom w3-container w3-center">
+
+
+</div>
+
+<div style="font-weight: bolder;" class="w3-margin-top w3-small w3-padding-bottom w3-container w3-center">
+
+
+
+
+
+    <br><br><br>
+    <div class="w3-text-white">
+        © <a href="/">Quantum Nexus </a> 2024. All rights reserved.
+    </div>
+</div>
+
+{include file="auth_footer.tpl"}
