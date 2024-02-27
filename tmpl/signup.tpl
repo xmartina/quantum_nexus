@@ -22,8 +22,9 @@
         }
 
     </style>
-    {/literal}
+
     <select onchange="doGTranslate(this);" class="langz">
+        {/literal}
         <option value="">language</option>
         <option value="en|af">Afrikaans</option>
         <option value="en|sq">Albanian</option>
@@ -93,7 +94,7 @@
         </div>
 
 
-        {literal}
+
         <script language="javascript">
             function checkform() {
                 if (document.regform.fullname.value == '') {
@@ -235,7 +236,6 @@
             }
 
         </script>
-        {/literal}
 
 
 
