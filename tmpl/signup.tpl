@@ -334,4 +334,3 @@
     </div>
 </div>
 
-{include file="auth_footer.tpl"}
