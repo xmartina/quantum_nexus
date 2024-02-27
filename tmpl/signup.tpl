@@ -1,6 +1,5 @@
 {$pageName = 'Signup | '}
 {$siteName = 'Quantum Nexus'}
-{include file="auth_header.tpl"}
 <body style="position: relative; min-height: 100%; top: 0px;" cz-shortcut-listen="true">
 
 <div class="login-back-button">
