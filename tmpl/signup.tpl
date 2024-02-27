@@ -6,7 +6,7 @@
     <div class="custom-container auth py-4 px-3">
         <div class="text-center px-4">
             <a href="https://brainboxoptionsinv.com"><img
-                        src="/template/front/a/uploads/1674120560_41d9f62f15e1e5bbfdec.png " class="login-intro-img"
+                        src="/template/front/a/uploads/1674120560_41d9f62f15e1e5bbfdec.png" class="login-intro-img"
                         width="150px"></a>
         </div>
 
