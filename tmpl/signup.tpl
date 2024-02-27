@@ -1,5 +1,4 @@
-{$pageName = 'Signup | '}
-{$siteName = 'Quantum Nexus'}
+
 <body style="position: relative; min-height: 100%; top: 0px;" cz-shortcut-listen="true">
 
 <div class="login-back-button">
