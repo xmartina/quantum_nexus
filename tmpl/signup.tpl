@@ -244,34 +244,7 @@
             function checkform() {if (document.regform.fullname.value == '') {alert("Please enter your full name!");
                     document.regform.fullname.focus();
                     return false;}
-                {if $settings.use_user_location == 1}
 
-                if (document.regform.address.value == '') {
-                    alert("Please enter your address!");
-                    document.regform.address.focus();
-                    return false;
-                }
-                if (document.regform.city.value == '') {
-                    alert("Please enter your city!");
-                    document.regform.city.focus();
-                    return false;
-                }
-                if (document.regform.state.value == '') {
-                    alert("Please enter your state!");
-                    document.regform.state.focus();
-                    return false;
-                }
-                if (document.regform.zip.value == '') {
-                    alert("Please enter your ZIP!");
-                    document.regform.zip.focus();
-                    return false;
-                }
-                if (document.regform.country.options[document.regform.country.selectedIndex].text == '--SELECT--') {
-                    alert("Please choose your country!");
-                    document.regform.country.focus();
-                    return false;
-                }
-                {/if}
                 if (document.regform.username.value == '') {
                     alert("Please enter your username!");
                     document.regform.username.focus();
@@ -355,9 +328,9 @@
         </script>
 {/literal}
 
-        <form method="post" onsubmit="return checkform()" name="regform"><input type="hidden" name="form_id"
-                                                                                value="17090550324761"><input
-                    type="hidden" name="form_token" value="9074bedad4a92d6d7b7fb8714a8dd2cd">
+        <form method="post" onsubmit="return checkform()" name="regform">
+            <input type="hidden" name="form_id" value="17090550324761">
+            <input type="hidden" name="form_token" value="9074bedad4a92d6d7b7fb8714a8dd2cd">
             <input type="hidden" name="a" value="signup">
             <input type="hidden" name="action" value="signup">
             <div class="form-group">
