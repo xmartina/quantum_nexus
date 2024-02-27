@@ -1,4 +1,4 @@
-{$pageName = 'Signup | '}
+{$pageName = 'Signup '}
 {$siteName = 'Quantum Nexus'}
 {include file="auth_header.tpl"}
 
@@ -7,7 +7,8 @@
         <div class="text-center px-4">
             <a href="https://brainboxoptionsinv.com"><img
                         src="/template/front/a/uploads/1674120560_41d9f62f15e1e5bbfdec.png" class="login-intro-img"
-                        width="150px"></a>
+                        width="150px">
+            </a>
         </div>
 
         {if $deny_registration}
