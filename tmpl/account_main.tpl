@@ -1,5 +1,6 @@
 {$pageName = 'User Dashboard '}
 {$siteName = 'Quantum Nexus'}
+{$siteLink = 'quantumnexusai.online'}
 {include file="back_header.tpl"}
 
 <div class="page-content-wrapper">
@@ -146,13 +147,12 @@
                             </h6>
                             <br>
                             <p class="fw-bolder mb-1">Last Deposit</p>
-                            <h6 class="mb-1">Date: n/a</h6>
                             <h6 class="mb-1">
                                 {$currency_sign}<b>{$last_deposit|default:"0.00"}</b>
                             </h6>
                             <br>
                             <p class="fw-bolder mb-1">Total Pending Deposit</p>
-                            <h6 class="mb-1"></h6>
+                            <h6 class="mb-1">{$currency_sign}<b>{$ab_formated.deposit}</b></h6>
                         </div>
                     </div>
                 </div>
@@ -167,20 +167,19 @@
                             <p class="fw-bolder mb-1">Withdrawals</p>
                             <h6 class="mb-1 ">Total Withdrawal</h6>
                             <h6 class="mb-1">
-                                <b>$0.00</b>
+                                <b>{$currency_sign}<b>{$ab_formated.withdrawal}</b></b>
                             </h6>
                             <br>
                             <h6 class="mb-1 ">Pending Withdrawal</h6>
                             <h6 class="mb-1">
-                                <b>0.00</b>
+                                {$currency_sign}<b>{$ab_formated.withdraw_pending}
                             </h6>
 
 
                             <br>
                             <p class="fw-bolder mb-1">Last Withdrawal/Deposit</p>
-                            <h6 class="mb-1">Date: n/a</h6>
                             <h6 class="mb-1">
-                                <b>$0.00</b>
+                                {$currency_sign}<b>{$last_withdrawal|default:"0.00"}</b>
 
                             </h6>
                             <br>
@@ -201,30 +200,30 @@
             <div class="sidenav-style1"></div>
             <h6 class="text-white">Referral Link</h6>
             <p class="mb-4 text-white">
-                https://brainboxoptionsinv.com/?ref=fad</p>
+                https://{$siteLink}/?ref={$userinfo.username}</p>
             <button onclick="copyRef()" class="clip btn btn-secondary shadowed">
                 <i class="fas fa-copy"></i>&nbsp;<span id="copy_ref">Copy</span>
             </button>
 
             <br>
-            <small class="text-white">Get Bonus when someone register on brainboxoptionsinv.com with your referral
+            <small class="text-white">Get Bonus when someone register on {$siteName} with your referral
                 link</small>
             <br>
             <span class="text-white">Share Link</span> &nbsp;&nbsp;
 
-            <a href="whatsapp://send?text=https://brainboxoptionsinv.com/?ref=fad"><i class="bi bi-whatsapp text-white"
+            <a href="whatsapp://send?text=https://{$siteLink}/?ref={$userinfo.username}"><i class="bi bi-whatsapp text-white"
                                                                                       style="font-size: 20px"> </i>
             </a>&nbsp;
 
-            <a href="https://t.me/share/url?url=https://brainboxoptionsinv.com/?ref=fad"><i
+            <a href="https://t.me/share/url?url=https://{$siteLink}/?ref={$userinfo.username}"><i
                         class="bi bi-telegram text-white" style="font-size: 20px"> </i>
             </a>&nbsp;
 
-            <a href="https://twitter.com/intent/tweet?url=https://brainboxoptionsinv.com/?ref=fad"><i
+            <a href="https://twitter.com/intent/tweet?url=https://{$siteLink}/?ref={$userinfo.username}"><i
                         class="bi bi-twitter text-white" style="font-size: 20px"></i>
             </a>&nbsp;
 
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://brainboxoptionsinv.com/?ref=fad"><i
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://{$siteLink}/?ref={$userinfo.username}"><i
                         class="bi bi-facebook text-white" style="font-size: 20px"></i></a>
         </div>
     </div>
