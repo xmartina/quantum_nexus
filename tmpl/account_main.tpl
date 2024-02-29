@@ -5,49 +5,11 @@
 <div class="page-content-wrapper">
     <div class="container py-2">
         <div class="alert custom-alert-2 alert-primary alert-dismissible fade show" role="alert">
-            <i class="bi bi-info-circle"></i>Welcome, fad <a href="" class="text-white">
+            <i class="bi bi-info-circle"></i>Welcome, {$userinfo.username} <a href="" class="text-white">
                 <strong>
-                    <pre style="position: relative;">  Last Access: Feb-20-2024 05:18:27 PM&nbsp; <div
+                    <pre style="position: relative;">  Last Access: {$last_access} <div
                                 class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
                 </strong></a>
-            <button class="btn btn-close btn-close-white position-relative p-1 ms-auto" type="button"
-                    data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    </div>
-
-
-    <div class="container py-2">
-        <div class="alert custom-alert-2 alert-primary alert-dismissible fade show" role="alert">
-
-            <ul style="color:red">
-                <div class="d-flex justify-content-between">
-                    <div class="timeline-text mb-2">
-                        <h6>IMPORTANT INFORMATION</h6>
-                        <i class="bi bi-info-circle"></i><b>TITTLE:</b> Hi <a href="" class="text-white"> <br> <b>MESSAGE:</b>
-                            <strong>Hello</strong></a>
-                        <form method="post"><input type="hidden" name="form_id" value="17091823669103"><input
-                                    type="hidden" name="form_token" value="41f168fa80e2d3f64e1092ac8a88cd0b">
-                            <input type="hidden" name="a" value="user_notices">
-                            <input type="hidden" name="action" value="notified">
-                            <input type="hidden" name="id" value="2">
-                        </form>
-                        <div class="d-flex justify-content-between">
-                            <div class="timeline-text mb-2">
-                                <h6>IMPORTANT INFORMATION</h6>
-                                <i class="bi bi-info-circle"></i><b>TITTLE:</b> Hi <a href="" class="text-white"> <br>
-                                    <b>MESSAGE:</b>
-                                    <strong>Testing trsting</strong></a>
-                                <form method="post"><input type="hidden" name="form_id" value="17091823669103"><input
-                                            type="hidden" name="form_token" value="41f168fa80e2d3f64e1092ac8a88cd0b">
-                                    <input type="hidden" name="a" value="user_notices">
-                                    <input type="hidden" name="action" value="notified">
-                                    <input type="hidden" name="id" value="1">
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </ul>
             <button class="btn btn-close btn-close-white position-relative p-1 ms-auto" type="button"
                     data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
@@ -64,8 +26,8 @@
                             <div class="timeline-text mb-2">
                                 <h6>Account Balance</h6>
                                 <h5 class="mb-1">
-                                    $<b>0
-                                    </b></h5>
+                                    {$currency_sign}<b>{$ab_formated.total}</b>
+                                </h5>
 
                             </div>
                             <div class="timeline-icon mb-2">
@@ -78,8 +40,7 @@
 
                             <span class="badge fw-normal bg-primary"><a href="?a=deposit" class="text-white">Invest/Deposit</a></span>
 
-                            <span class="badge fw-normal bg-primary"><a href="?a=withdraw"
-                                                                        class="text-white">Withdraw</a></span>
+                            <span class="badge fw-normal bg-primary"><a href="?a=withdraw" class="text-white">Withdraw</a></span>
                         </div>
                     </div>
                 </div>
@@ -144,8 +105,7 @@
                         <div class="timeline-text mb-2">
                             <p class="fw-bolder">Live Earnings</p>
                             <h5 class="mb-1">
-                                $<b>0.00000000
-                                </b>
+                                {$currency_sign}<b>{$ab_formated.earning}</b>
                             </h5>
                         </div>
                     </div>
@@ -159,7 +119,7 @@
                         <div class="timeline-text mb-2">
                             <p class="fw-bolder">Total Profit</p>
                             <h6 class="mb-1">
-                                $<b>0.00</b>
+                                {$currency_sign}<b>{$ab_formated.total}</b>
                             </h6>
                         </div>
                     </div>
@@ -177,18 +137,18 @@
                             <p class="fw-bolder mb-1">Deposits</p>
                             <h6 class="mb-1 ">Active Deposit</h6>
                             <h6 class="mb-1">
-                                $<b>0.00</b>
+                                {$currency_sign}<b>{$ab_formated.active_deposit}</b>
                             </h6>
                             <br>
                             <h6 class="mb-1 ">Total Deposit</h6>
                             <h6 class="mb-1">
-                                <b>$0.00</b>
+                                {$currency_sign}<b>{$ab_formated.deposit}</b>
                             </h6>
                             <br>
                             <p class="fw-bolder mb-1">Last Deposit</p>
                             <h6 class="mb-1">Date: n/a</h6>
                             <h6 class="mb-1">
-                                <b>$0.00</b>
+                                {$currency_sign}<b>{$last_deposit|default:"0.00"}</b>
                             </h6>
                             <br>
                             <p class="fw-bolder mb-1">Total Pending Deposit</p>

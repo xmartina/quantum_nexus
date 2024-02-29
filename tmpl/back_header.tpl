@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>
-        | {$pageName}
+        {$pageName} | {$siteName}
     </title>
 
     <link rel="apple-touch-icon" sizes="144x144" href="/template/front/a/uploads/favicon.png">
