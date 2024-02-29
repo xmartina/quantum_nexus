@@ -1,4 +1,4 @@
-{$pageName = 'Signup '}
+{$pageName = 'User Dashboard '}
 {$siteName = 'Quantum Nexus'}
 {include file="back_header.tpl"}
 
